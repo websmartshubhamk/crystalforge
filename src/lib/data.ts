@@ -53,13 +53,14 @@ export interface Project {
   category: string
   year: string
   gradient: string
+  image: string
 }
 
 export const projects: Project[] = [
-  { title: 'Meridian Capital', category: 'Brand Identity', year: '2025', gradient: 'from-amber-600 to-orange-500' },
-  { title: 'Solaris App', category: 'Product Design', year: '2025', gradient: 'from-orange-500 to-rose-400' },
-  { title: 'Aurum Finance', category: 'Web Development', year: '2024', gradient: 'from-amber-500 to-yellow-400' },
-  { title: 'Ember Studios', category: 'Motion & 3D', year: '2024', gradient: 'from-rose-400 to-amber-500' },
+  { title: 'Meridian Capital', category: 'Brand Identity', year: '2025', gradient: 'from-amber-600 to-orange-500', image: '/projects/meridian-capital.svg' },
+  { title: 'Solaris App', category: 'Product Design', year: '2025', gradient: 'from-orange-500 to-rose-400', image: '/projects/solaris-app.svg' },
+  { title: 'Aurum Finance', category: 'Web Development', year: '2024', gradient: 'from-amber-500 to-yellow-400', image: '/projects/aurum-finance.svg' },
+  { title: 'Ember Studios', category: 'Motion & 3D', year: '2024', gradient: 'from-rose-400 to-amber-500', image: '/projects/ember-studios.svg' },
 ]
 
 export interface Testimonial {

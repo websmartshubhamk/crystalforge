@@ -20,9 +20,9 @@ export function Portfolio() {
               className="group relative aspect-[4/3] overflow-hidden rounded-2xl cursor-pointer"
               data-section-item
             >
-              <div className={cn('absolute inset-0 bg-gradient-to-br', project.gradient)} />
+              <img src={project.image} alt={project.title} className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
+              <div className={cn('absolute inset-0 bg-gradient-to-br opacity-30', project.gradient)} />
               <div className="absolute inset-0 bg-black/20 transition-all duration-300 group-hover:bg-black/40" />
-              <div className="absolute inset-0 transition-transform duration-500 group-hover:scale-[1.02]" />
               <div className="relative flex h-full flex-col justify-between p-8">
                 <div className="flex items-start justify-between">
                   <span className="rounded-full bg-[rgba(0,0,0,0.3)] px-3 py-1 text-xs text-white/80">
