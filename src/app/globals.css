@@ -1,0 +1,56 @@
+@import 'tailwindcss';
+
+:root {
+  --bg: #0a0806;
+  --fg: #faf5eb;
+  --amber: #f59e0b;
+  --orange: #f97316;
+  --rose-gold: #e879a0;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+::selection {
+  background: rgba(245, 158, 11, 0.25);
+  color: #fff;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: rgba(245, 158, 11, 0.4); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(245, 158, 11, 0.7); }
+
+.gradient-text-warm {
+  background: linear-gradient(135deg, #f59e0b, #f97316, #e879a0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes grow-line {
+  0% { height: 0; }
+  100% { height: 60px; }
+}
+.animate-grow-line {
+  animation: grow-line 2s ease-out infinite;
+}
